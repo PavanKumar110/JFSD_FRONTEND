@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegefoods</title>
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-primary {
+            background-color: #82ae46 !important;
+        }
+
+        .wrap-about {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 2rem;
+            background: #fff;
+            box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .heading-section-bold h2 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 40px;
+            color: #000;
+            margin-bottom: 1.5rem;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: #82ae46;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+
+        .btn-primary:hover {
+            background-color: #669934;
+        }
+
+        .form-group.text-center {
+            margin-top: 20px;
+        }
+
+        .form-group.text-center p {
+            font-size: 14px;
+        }
+
+        .form-group.text-center a {
+            color: #82ae46;
+            text-decoration: none;
+        }
+
+        .form-group.text-center a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-primary">
+    <div class="login-container">
+        <div class="wrap-about">
+            <h2 class="heading-section-bold text-center">Sign Up</h2>
+            <form action="/submit-signup" method="POST">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary submit">Sign Up</button>
+                </div>
+                <div class="form-group text-center">
+                    <p>Already have an account? <a href="login.html">Login here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
